@@ -5,7 +5,7 @@ export default function Card() {
 
   return (
     <>
-      <div className="m-1 overflow-hidden shadow-lg max-w-min rounded-3xl">
+      <div className="m-2 overflow-hidden shadow-lg max-w-min rounded-3xl">
         <div className="justify-center px-3 py-4 ">
           <div className="flex flex-row ">
             <div className="px-5 pt-1 mb-2 text-3xl font-bold text-green-600 align-middle ">
