@@ -4,7 +4,7 @@ import Card from "./components/Card";
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
-    <main className="flex flex-row flex-wrap justify-between flex-grow px-20">
+    <main className="flex flex-row flex-wrap justify-around flex-grow px-20">
       {/* <div className='flex justify-center w-full mb-3 text-center align-middle border'>
         <span className='p-10 text-4xl font-black tracking-wide text-center text-green-700'>
           Vagas de Estágio Abertas
