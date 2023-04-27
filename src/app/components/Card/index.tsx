@@ -11,7 +11,7 @@ export default function Card() {
             <div className="px-5 pt-1 mb-2 text-3xl font-bold text-green-600 align-middle ">
               <FaIdCardAlt className='align-middle' />
             </div>
-            <div className="mb-2 text-xl font-black leading-5 text-green-600 uppercase ">ESTÁGIO OBRIGATÓRIO</div>
+            <div className="mb-2 text-xl font-black leading-5 text-green-600 uppercase align-middle ">ESTÁGIO OBRIGATÓRIO</div>
           </div>
           <div className="flex justify-center my-3 text-lg font-bold text-black ">
             Arquitetura e Urbanismo
