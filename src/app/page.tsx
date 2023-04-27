@@ -13,6 +13,7 @@ export default function Home() {
       <Card />
       <Card />
       <Card />
+      <Card />
     </main>
   )
 }
