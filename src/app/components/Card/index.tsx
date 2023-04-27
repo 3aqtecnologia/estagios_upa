@@ -5,13 +5,13 @@ export default function Card() {
 
   return (
     <>
-      <div className="max-w-xs m-2 overflow-hidden shadow-lg rounded-3xl">
+      <div className="max-w-xs mx-1 my-2 overflow-hidden shadow-lg rounded-3xl">
         <div className="justify-center px-3 py-4 ">
           <div className="flex flex-row ">
             <div className="px-5 pt-1 mb-2 text-3xl font-bold text-green-600 align-middle ">
               <FaIdCardAlt className='align-middle' />
             </div>
-            <div className="mb-2 text-xl font-black leading-5 text-green-600 uppercase align-middle ">ESTÁGIO OBRIGATÓRIO</div>
+            <div className="pt-1 mb-2 text-xl font-black leading-5 text-green-600 uppercase align-middle ">ESTÁGIO OBRIGATÓRIO</div>
           </div>
           <div className="flex justify-center my-3 text-lg font-bold text-black ">
             Arquitetura e Urbanismo
