@@ -18,7 +18,7 @@ export default function Estagios() {
             {/* Curso */}
             <div className="my-3">
               <select className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                <option selected>Cursos</option>
+                <option selected disabled>Cursos</option>
                 <option>Administração</option>
                 <option>Recursos Humanos</option>
                 <option>Ciências Contábeis</option>
