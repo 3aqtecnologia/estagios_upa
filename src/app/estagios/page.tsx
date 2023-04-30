@@ -1,3 +1,4 @@
+
 import { RiSearchEyeLine } from "react-icons/ri";
 import Card from "./components/Card";
 
@@ -14,6 +15,36 @@ export default function Estagios() {
         <div className="mr-6 ">
           <div className="h-64 px-10 pt-8 mr-4 bg-white border border-gray-400 rounded-xl w-60">
             <p className="text-lg font-light text-center">Filtre sua pesquisa</p>
+            {/* Curso */}
+            <div className="my-3">
+              <select className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                <option selected>Cursos</option>
+                <option>Administração</option>
+                <option>Recursos Humanos</option>
+                <option>Ciências Contábeis</option>
+                <option>Todos</option>
+              </select>
+            </div>
+            {/* Orgão */}
+            <div className="my-3">
+              <select className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                <option selected disabled>Orgão</option>
+                <option>...</option>
+                <option>Todos</option>
+              </select>
+
+            </div>
+            {/* Orgão */}
+            <div className="my-3">
+              <select className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                <option selected disabled>Estado</option>
+                <option>Abertos</option>
+                <option>Em andamento</option>
+                <option>Finalizado</option>
+                <option>Todos</option>
+              </select>
+
+            </div>
           </div>
         </div>
         <div className="flex flex-col">
