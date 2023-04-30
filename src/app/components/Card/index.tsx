@@ -22,7 +22,7 @@ export default function Card() {
           </p>
         </div>
         <div className="flex justify-center px-6 pt-4 pb-2 align-middle">
-          <Link href='https://institucional.universidadepatativa.com.br/estagios/' className="px-8 py-2 mb-2 font-light tracking-wide text-white bg-green-700 rounded-full hover:bg-green-900">
+          <Link target='_blank' href='https://institucional.universidadepatativa.com.br/estagios/' className="px-8 py-2 mb-2 font-light tracking-wide text-white bg-green-700 rounded-full hover:bg-green-900">
             Ver detelhes
           </Link>
           {/* <button className="px-8 py-2 mb-2 font-light tracking-wide text-white bg-green-700 rounded-full hover:bg-green-900">Ver detelhes</button> */}
