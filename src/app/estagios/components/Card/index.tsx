@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Card() {
 
@@ -26,7 +27,8 @@ export default function Card() {
           </div>
         </div>
         <div className="flex justify-center align-middle">
-          <button className="z-auto py-2 text-lg font-medium tracking-wide text-blue-800 uppercase bg-gray-300 rounded-b-lg w-96 hover:bg-gray-200 hover:text-green-800 hover:font-bold" >Ver detelhes</button>
+
+          <Link target='_top' href='https://institucional.universidadepatativa.com.br/estagio-detalhe/?id=65156181' className="z-auto py-2 text-lg font-medium tracking-wide text-blue-800 uppercase bg-gray-300 rounded-b-lg w-96 hover:bg-gray-200 hover:text-green-800 hover:font-bold" >Ver detelhes</Link>
         </div>
       </div>
     </>
