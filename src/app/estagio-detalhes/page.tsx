@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaFacebookF, FaLinkedinIn, FaShareAlt, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 
 export default function Estagios() {
@@ -30,6 +30,8 @@ export default function Estagios() {
               <Link target='_top' href='https://institucional.universidadepatativa.com.br/estagios/' className="px-8 py-2 mb-2 font-bold tracking-wide text-white bg-blue-700 rounded-full hover:bg-blue-900">
                 Cadastre-se
               </Link>
+
+
             </div>
           </div>
 
@@ -39,16 +41,22 @@ export default function Estagios() {
             Compartilhe<br />com alguém
           </p>
           <div className="flex flex-row justify-around text-xl w-44" >
-            <FaShareAlt />
-            <FaFacebookF />
-            <FaWhatsapp />
-            <FaLinkedinIn />
+            {/* <FaShareAlt /> */}
+            <Link target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://institucional.universidadepatativa.com.br/estagio-detalhe/?id=65156181">
+              <FaFacebookF />
+            </Link>
+            <Link target="_blank" href=" https://api.whatsapp.com/send?text=https://institucional.universidadepatativa.com.br/estagio-detalhe/?id=65156181">
+              <FaWhatsapp />
+            </Link>
+            <Link target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://institucional.universidadepatativa.com.br/estagio-detalhe/?id=65156181">
+              <FaLinkedinIn />
+            </Link>
           </div>
 
         </div>
       </div>
       <div className="">
-        <div className="w-32 px-5 py-3 mb-10 text-xl font-bold text-center bg-gray-200 rounded-t-lg ml-60">Detalhes</div>
+        <div className="w-32 px-5 py-3 mb-10 text-xl font-bold text-center bg-gray-200 rounded-t-lg h-f ml-60">Detalhes</div>
         <div className="w-full h-64 py-12 bg-gray-200 px-60">
           <p className="text-2xl font-semibold">
             Local de Estágio
