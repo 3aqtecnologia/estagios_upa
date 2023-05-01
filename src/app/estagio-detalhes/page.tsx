@@ -27,7 +27,7 @@ export default function Estagios() {
             </div>
             <div className="mx-5">
 
-              <Link target='_top' href='https://institucional.universidadepatativa.com.br/estagios/' className="px-8 py-2 mb-2 font-bold tracking-wide text-white bg-blue-700 rounded-full hover:bg-blue-900">
+              <Link target='_blank' href='https://estagio.universidadepatativa.com.br/painel/estudante/login' className="px-8 py-2 mb-2 font-bold tracking-wide text-white bg-blue-700 rounded-full hover:bg-blue-900">
                 Cadastre-se
               </Link>
 
