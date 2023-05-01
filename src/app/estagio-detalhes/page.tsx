@@ -30,8 +30,6 @@ export default function Estagios() {
               <Link target='_blank' href='https://estagio.universidadepatativa.com.br/painel/estudante/login' className="px-8 py-2 mb-2 font-bold tracking-wide text-white bg-blue-700 rounded-full hover:bg-blue-900">
                 Cadastre-se
               </Link>
-
-
             </div>
           </div>
 
@@ -56,7 +54,7 @@ export default function Estagios() {
         </div>
       </div>
       <div className="">
-        <div className="w-32 px-5 py-3 mb-10 text-xl font-bold text-center bg-gray-200 rounded-t-lg h-f ml-60">Detalhes</div>
+        <div className="w-32 px-5 py-3 text-xl font-bold text-center bg-gray-200 rounded-t-lg h-f ml-60">Detalhes</div>
         <div className="w-full h-64 py-12 bg-gray-200 px-60">
           <p className="text-2xl font-semibold">
             Local de Estágio
@@ -75,7 +73,6 @@ export default function Estagios() {
           <p className="my-3 text-lg font-light tracking-wide">
             <span className="font-bold"> 12/02/2023 </span> - Entrevista
           </p>
-
         </div>
         <div className="w-full py-12 bg-gray-200 h-52 px-60">
           <p className="text-xl font-semibold">
