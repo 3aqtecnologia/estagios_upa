@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedinIn, FaShareAlt, FaWhatsapp } from "react-icons/f
 
 export default function Estagios() {
   return (
-    <main className="container h-screen mx-auto border border-gray-500 min-w-xl ">
+    <main className="container h-screen mx-auto min-w-xl ">
       <div className="flex flex-row mb-10">
         <div className="items-center mr-3">
           <img className="w-48 h-48 rounded-xl" src="https://placehold.co/200/F6B80A/FFFFFF" alt="" />
@@ -48,7 +48,11 @@ export default function Estagios() {
         </div>
       </div>
       <div className="container p-5">
-        conteudo
+        <div className="w-32 px-5 py-3 ml-20 text-lg font-bold text-center bg-gray-300 rounded-t-lg">Detalhes</div>
+        <div className="w-full py-10 bg-gray-300 px-14 h-80">Local de Estágio</div>
+        <div className="">Fases</div>
+        <div className="">Cursos contemplados</div>
+        <div className="">Requisitos mínimos</div>
       </div>
     </main>
 
