@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedinIn, FaShareAlt, FaWhatsapp } from "react-icons/f
 
 export default function Estagios() {
   return (
-    <main className="h-screen border ">
+    <main className="h-screen ">
       <div className="flex flex-row w-9/12 mx-auto mb-10">
         <div className="items-center mr-3">
           <img className="w-48 h-48 rounded-xl" src="https://placehold.co/200/F6B80A/FFFFFF" alt="" />
@@ -48,13 +48,55 @@ export default function Estagios() {
         </div>
       </div>
       <div className="">
-        <div className="w-32 px-5 py-3 text-lg font-bold text-center bg-gray-200 rounded-t-lg ml-60">Detalhes</div>
-        <div className="w-full py-10 bg-gray-200 pl-60 h-80">Local de Estágio</div>
-        <div className="">Fases</div>
-        <div className="">Cursos contemplados</div>
-        <div className="">Requisitos mínimos</div>
+        <div className="w-32 px-5 py-3 mb-10 text-xl font-bold text-center bg-gray-200 rounded-t-lg ml-60">Detalhes</div>
+        <div className="w-full h-64 py-12 bg-gray-200 px-60">
+          <p className="text-2xl font-semibold">
+            Local de Estágio
+          </p>
+          <p className="my-3 text-lg font-light tracking-wide" >CSGC.GB</p>
+          <p className="text-lg font-light tracking-wide">Foz do Iguaçu - PR</p>
+        </div>
+        <div className="w-full h-64 py-12 px-60">
+          <p className="text-2xl font-semibold">Fases</p>
+          <p className="my-3 text-lg font-light tracking-wide">
+            <span className="font-bold"> 02/01/2023 a 10/02/2023 </span> - Inscrições Abertas
+          </p>
+          <p className="my-3 text-lg font-light tracking-wide">
+            <span className="font-bold"> 12/02/2023 -  </span> - Análise Curricular
+          </p>
+          <p className="my-3 text-lg font-light tracking-wide">
+            <span className="font-bold"> 12/02/2023 </span> - Entrevista
+          </p>
+
+        </div>
+        <div className="w-full py-12 bg-gray-200 h-52 px-60">
+          <p className="text-xl font-semibold">
+            Cursos contemplados
+          </p>
+          <p className="my-3 text-xl font-bold">
+            Administração, Recursos Humanos e Ciências Contábeis
+          </p>
+        </div>
+        <div className="w-full py-12 mb-20 h-72 px-60 ">
+          <p className="text-xl font-semibold">
+            Requisitos mínimos
+          </p>
+          <p className="mt-5 text-xl font-light leading-10 tracking-wide">
+            Estar matriculado e cursando os cursos contemplados Ser brasileiro(a) nato(a), naturalizado(a) ou estrangeiro(a) com visto permanente no país; Ter idade mínima de 16 (dezesseis) anos, até a data de posse; Não ter feito estágio por período superior a vinte e dois meses, exceto pessoas com deficiência (Art. 11 da Lei 11.788/08); Residir nas cidades de FOZ DO IGUAÇU/PR.
+          </p>
+          <p className="text-xl font-light leading-10 tracking-wide">Benefícios:
+          </p>
+          <p className="text-xl font-light leading-10 tracking-wide">
+            Bolsa auxílio: R$ 650,00 por mês - Jornada 30h semanais.
+          </p>
+          <p className="text-xl font-light leading-10 tracking-wide">
+            Auxílio transporte : R$ 100,00 por mês.
+          </p>
+          <br />
+          <br />
+        </div>
       </div>
-    </main>
+    </main >
 
 
   )
