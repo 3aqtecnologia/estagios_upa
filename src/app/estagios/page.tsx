@@ -1,5 +1,5 @@
 
-import { JSXElementConstructor, Key, ReactElement, ReactFragment, ReactPortal } from "react";
+import { JSXElementConstructor, Key, ReactElement, ReactFragment, ReactNode, ReactPortal } from "react";
 import { RiSearchEyeLine } from "react-icons/ri";
 import { getVagas } from "../services/get-vagas";
 import Card from "./components/Card";
@@ -8,8 +8,8 @@ type VagasProps = {
   codigo: number;
   titulo: string;
   tipoVaga: string;
-  cursos: object;
-  cidade: object;
+  cursos: ReactNode;
+  cidade: ReactNode;
   concedente: string;
 }
 export default async function Estagios() {
