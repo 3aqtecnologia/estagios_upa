@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 
 type VagasProps = {
   codigo: number;
   titulo: string;
   tipoVaga: string;
-  cursos: object;
-  cidade: object;
+  cursos: ReactNode;
+  cidade: ReactNode;
   concedente: string;
 }
 export default function Card({ tipoVaga, cursos, cidade, codigo, titulo, concedente }: VagasProps) {
