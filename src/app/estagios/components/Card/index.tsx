@@ -1,6 +1,14 @@
 import Link from "next/link";
 
-export default function Card() {
+type VagasProps = {
+  codigo: number;
+  titulo: string;
+  tipoVaga: string;
+  cursos: object;
+  cidade: object;
+  concedente: string;
+}
+export default function Card({ tipoVaga, cursos, cidade, codigo, titulo, concedente }: VagasProps) {
 
   return (
     <>
@@ -12,23 +20,24 @@ export default function Card() {
           </div>
           <div className="justify-center px-3 py-4 ">
             <div className="flex flex-row justify-start ">
-              <small className="px-4 py-1 text-xs font-semibold text-white uppercase align-middle bg-blue-500 rounded-full" style={{ fontSize: 10 }}>OBRIGATÓRIO</small>
+              <small className="px-4 py-1 text-xs font-semibold text-white uppercase align-middle bg-blue-500 rounded-full" style={{ fontSize: 10 }}>
+                {tipoVaga}
+              </small>
             </div>
 
-            <div className="flex justify-start my-3 text-xl font-bold text-black ">
-              ITAIPÚ Binacional
+            <div className="flex justify-start my-3 text-lg font-bold text-black ">
+              {concedente}
             </div>
-            <p className="flex justify-start text-xs tracking-wide text-gray-700 align-middle">
-              Administração, Recursos Humanos e Ciências Contábeis
+            <p className="flex flex-wrap justify-start text-xs tracking-wide text-gray-700 align-middle">
+              {cursos}
             </p>
-            <p className="flex justify-start mt-2 text-sm font-semibold tracking-wide text-gray-800 align-middle mb-14">
-              Juazeiro do Norte-CE
+            <p className="flex flex-wrap justify-start mt-2 text-sm font-semibold tracking-wide text-gray-800 align-middle mb-14">
+              {cidade}
             </p>
           </div>
         </div>
-        <div className="flex justify-center align-middle">
-
-          <Link target='_top' href='https://institucional.universidadepatativa.com.br/estagio-detalhe/?id=65156181' className="z-auto py-2 text-lg font-medium tracking-wide text-center text-blue-800 uppercase bg-gray-300 rounded-b-lg w-96 hover:bg-gray-200 hover:text-green-800 hover:font-bold" >Ver detelhes</Link>
+        <div className="box-border flex justify-end align-bottom">
+          <Link target='_top' href={`https://institucional.universidadepatativa.com.br/estagio-detalhe/?id=${titulo}`} className="z-auto justify-end py-2 text-lg font-medium tracking-wide text-center text-blue-800 uppercase align-bottom bg-gray-300 rounded-b-lg w-96 hover:bg-gray-200 hover:text-green-800 hover:font-bold" >Ver detelhes</Link>
         </div>
       </div>
     </>
