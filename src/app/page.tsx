@@ -3,7 +3,6 @@ import Card from './components/Card';
 import { getVagas } from './services/get-vagas';
 const inter = Inter({ subsets: ['latin'] })
 
-
 type VagasProps = {
   codigo: number;
   tipoVaga: string;

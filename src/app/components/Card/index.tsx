@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import { FaIdCardAlt } from 'react-icons/fa';
 
-
 type VagasProps = {
   codigo: number;
   tipoVaga: string;
@@ -26,7 +25,6 @@ export default function Card({ tipoVaga, cursos, cidade, codigo }: VagasProps) {
           </div>
           <div className="flex flex-wrap justify-center my-3 text-base font-bold text-center text-black ">
             {cursos}
-
           </div>
           <p className="flex justify-center text-sm tracking-wide text-gray-500 align-middle">
             {cidade}
