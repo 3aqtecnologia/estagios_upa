@@ -5,12 +5,12 @@ import { FaIdCardAlt } from 'react-icons/fa';
 
 type VagasProps = {
   codigo: number;
-  tipo_vaga: string;
+  tipoVaga: string;
   titulo: string;
   cursos: object;
   cidade: object;
 }
-export default function Card({ tipo_vaga, cursos, cidade, codigo }: VagasProps) {
+export default function Card({ tipoVaga, cursos, cidade, codigo }: VagasProps) {
 
   return (
     <>
@@ -21,7 +21,7 @@ export default function Card({ tipo_vaga, cursos, cidade, codigo }: VagasProps) 
               <FaIdCardAlt className='align-middle' />
             </div>
             <div className="pt-1 mb-2 text-2xl font-black leading-6 text-green-600 uppercase align-middle ">
-              {tipo_vaga}
+              {tipoVaga}
             </div>
           </div>
           <div className="flex flex-wrap justify-center my-3 text-base font-bold text-center text-black ">

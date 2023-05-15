@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 type VagasProps = {
   codigo: number;
-  tipo_vaga: string;
+  tipoVaga: string;
   titulo: string;
   cursos: object;
   cidade: object;
@@ -18,7 +18,7 @@ export default async function Home() {
   return (
     <main className="flex flex-row flex-wrap justify-around flex-grow">
       {vagas.slice(0, 4).map(vaga =>
-        <Card key={vaga.codigo} tipo_vaga={vaga.tipo_vaga.descricao} cursos={vaga.cursos.map((curso, index) => (<span key={index}>{curso.descricao}</span>))} cidade={vaga.cidade.descricao} codigo={vaga.titulo} />
+        <Card key={vaga.codigo} tipoVaga={vaga.tipo_vaga.descricao} cursos={vaga.cursos.map((curso, index) => (<span key={index}>{curso.descricao}</span>))} cidade={vaga.cidade.descricao} codigo={vaga.titulo} />
 
       )
       };
