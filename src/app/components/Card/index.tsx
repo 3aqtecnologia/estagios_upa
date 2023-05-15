@@ -5,10 +5,10 @@ import { FaIdCardAlt } from 'react-icons/fa';
 
 type VagasProps = {
   codigo: number;
+  tipo_vaga: string;
   titulo: string;
   cursos: object;
   cidade: object;
-
 }
 export default function Card({ tipo_vaga, cursos, cidade, codigo }: VagasProps) {
 
