@@ -2,7 +2,15 @@
 import Link from 'next/link';
 import { FaIdCardAlt } from 'react-icons/fa';
 
-export default function Card() {
+
+type VagasProps = {
+  codigo: number;
+  titulo: string;
+  cursos: object;
+  cidade: object;
+
+}
+export default function Card({ tipo_vaga, cursos, cidade, codigo }: VagasProps) {
 
   return (
     <>
@@ -12,17 +20,20 @@ export default function Card() {
             <div className="px-5 py-3 mb-2 text-3xl font-bold text-green-600 align-middle ">
               <FaIdCardAlt className='align-middle' />
             </div>
-            <div className="pt-1 mb-2 text-2xl font-black leading-6 text-green-600 uppercase align-middle ">ESTÁGIO OBRIGATÓRIO</div>
+            <div className="pt-1 mb-2 text-2xl font-black leading-6 text-green-600 uppercase align-middle ">
+              {tipo_vaga}
+            </div>
           </div>
-          <div className="flex justify-center my-3 text-lg font-bold text-black ">
-            Arquitetura e Urbanismo
+          <div className="flex flex-wrap justify-center my-3 text-base font-bold text-center text-black ">
+            {cursos}
+
           </div>
-          <p className="flex justify-center text-base tracking-wide text-gray-500 align-middle">
-            Juazeiro do Norde-CE
+          <p className="flex justify-center text-sm tracking-wide text-gray-500 align-middle">
+            {cidade}
           </p>
         </div>
         <div className="flex justify-center px-6 pt-4 pb-2 align-middle">
-          <Link target='_top' href='https://institucional.universidadepatativa.com.br/estagio-detalhe/?id=65156181' className="px-8 py-2 mb-2 font-light tracking-wide text-white bg-green-700 rounded-full hover:bg-green-900">
+          <Link target='_top' href={`https://institucional.universidadepatativa.com.br/estagio-detalhe/?id=${codigo}`} className="px-8 py-2 mb-2 font-light tracking-wide text-white bg-green-700 rounded-full hover:bg-green-900">
             Ver detelhes
           </Link>
           {/* <button className="px-8 py-2 mb-2 font-light tracking-wide text-white bg-green-700 rounded-full hover:bg-green-900">Ver detelhes</button> */}
