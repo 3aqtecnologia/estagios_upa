@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import { JSXElementConstructor, Key, ReactElement, ReactFragment, ReactPortal } from 'react';
 import Card from './components/Card';
 import { getVagas } from './services/get-vagas';
 const inter = Inter({ subsets: ['latin'] })
@@ -12,12 +13,12 @@ type VagasProps = {
   vaga: object;
 }
 
-export default async function Home<VagasProps>() {
+export default async function Home() {
   const vagas = await getVagas();
   return (
     <main className="flex flex-row flex-wrap justify-around flex-grow">
-      {vagas.slice(0, 4).map(vaga =>
-        <Card key={vaga.codigo} tipoVaga={vaga.tipo_vaga.descricao} cursos={vaga.cursos.map((curso, index) => (<span key={index}>{curso.descricao}</span>))} cidade={vaga.cidade.descricao} codigo={vaga.titulo} />
+      {vagas.slice(0, 4).map((vaga: { codigo: Key | null | undefined; tipo_vaga: { descricao: string; }; cursos: any[]; cidade: { descricao: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }; titulo: string }) =>
+        <Card key={vaga.codigo} tipoVaga={vaga.tipo_vaga.descricao} cursos={vaga.cursos.map((curso: { descricao: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }, index: Key | null | undefined) => (<span key={index}>{curso.descricao}</span>))} cidade={vaga.cidade.descricao} titulo={vaga.titulo} codigo={0} />
       )
       };
     </main>
