@@ -1,13 +1,14 @@
 
 import Link from 'next/link';
+import { ReactNode } from 'react';
 import { FaIdCardAlt } from 'react-icons/fa';
 
 type VagasProps = {
   codigo: number;
   tipoVaga: string;
   titulo: string;
-  cursos: object;
-  cidade: object;
+  cursos: ReactNode;
+  cidade: ReactNode;
 }
 export default function Card({ tipoVaga, cursos, cidade, codigo }: VagasProps) {
 
