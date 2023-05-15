@@ -61,7 +61,7 @@ export default async function Estagios() {
         <div className="flex flex-col">
           <p className="font-semibold">Resultados do Filtro</p>
           <div className="flex flex-row flex-wrap justify-evenly ">
-            {vagas.map((vaga: { codigo: Key | null | undefined; tipo_vaga: { descricao: string; }; cursos: any[]; cidade: { descricao: object; }; titulo: string; concedente: { descricao: string; }; }) =>
+            {vagas.map((vaga: { codigo: Key | null | undefined; tipo_vaga: { descricao: string; }; cursos: { descricao: string | number | boolean | ReactFragment | ReactPortal | ReactElement<any, string | JSXElementConstructor<any>> | null | undefined; }[]; cidade: { descricao: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }; titulo: string; concedente: { descricao: string; }; }) =>
               <Card key={vaga.codigo} tipoVaga={vaga.tipo_vaga.descricao} cursos={vaga.cursos.map((curso: { descricao: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }, index: Key | null | undefined) => (<span key={index}>{curso.descricao}</span>))} cidade={vaga.cidade.descricao} titulo={vaga.titulo} concedente={vaga.concedente.descricao} codigo={0} />
             )
             }
