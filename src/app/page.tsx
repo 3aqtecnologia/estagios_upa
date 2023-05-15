@@ -13,12 +13,10 @@ type VagasProps = {
 
 export default async function Home() {
   const vagas = await getVagas();
-  const curso: object = ['teste']
   return (
     <main className="flex flex-row flex-wrap justify-around flex-grow">
       {vagas.slice(0, 4).map(vaga =>
         <Card key={vaga.codigo} tipoVaga={vaga.tipo_vaga.descricao} cursos={vaga.cursos.map((curso, index) => (<span key={index}>{curso.descricao}</span>))} cidade={vaga.cidade.descricao} codigo={vaga.titulo} />
-
       )
       };
     </main>
