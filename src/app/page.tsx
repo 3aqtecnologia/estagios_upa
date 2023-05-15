@@ -9,9 +9,10 @@ type VagasProps = {
   titulo: string;
   cursos: object;
   cidade: object;
+  vaga: object;
 }
 
-export default async function Home() {
+export default async function Home<VagasProps>() {
   const vagas = await getVagas();
   return (
     <main className="flex flex-row flex-wrap justify-around flex-grow">
