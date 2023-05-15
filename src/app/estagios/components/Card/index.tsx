@@ -9,7 +9,7 @@ type VagasProps = {
   cidade: ReactNode;
   concedente: string;
 }
-export default function Card({ tipoVaga, cursos, cidade, codigo, titulo, concedente }: VagasProps) {
+export default function Card({ tipoVaga, cursos, cidade, titulo, concedente }: VagasProps) {
 
   return (
     <>
