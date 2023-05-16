@@ -1,8 +1,24 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { getVagaByTitle } from "../services/get-vaga-by-title";
 
 
-export default function Estagios() {
+type VagasProps = {
+  id: string;
+  codigo: number;
+  titulo: string;
+  tipoVaga: string;
+  cursos: ReactNode;
+  cidade: ReactNode;
+  concedente: string;
+}
+
+export default async function Estagios({ params }: { params: { titulo: string } }) {
+
+  const vaga = await getVagaByTitle(params.titulo);
+  console.log(vaga);
+
   return (
     <main className="h-screen ">
       <div className="flex flex-row w-9/12 mx-auto mb-10">
@@ -11,10 +27,12 @@ export default function Estagios() {
         </div>
         <div className="flex flex-col w-2/3 p-5 mr-2 ">
           <div className="flex flex-row items-center">
-            <div className="mr-5 text-4xl font-bold">ITAIPÚ Binacional</div>
+            <div className="mr-5 text-4xl font-bold">
+              {vaga}
+            </div>
             <div>
               <small className="px-4 py-0.5 text-xs font-semibold text-white uppercase align-middle bg-blue-400 rounded-full" style={{ fontSize: 10 }}>
-                OBRIGATÓRIO
+                obrigatório
               </small>
             </div>
           </div>

@@ -38,7 +38,8 @@ export default function Card({ tipoVaga, cursos, cidade, titulo, concedente }: V
           </div>
         </div>
         <div className="box-border flex justify-end align-bottom">
-          <Link target='_top' href={`https://institucional.universidadepatativa.com.br/estagio-detalhe/?id=${titulo}`} className="z-auto justify-end py-2 text-lg font-medium tracking-wide text-center text-blue-800 uppercase align-bottom bg-gray-300 rounded-b-lg w-96 hover:bg-gray-200 hover:text-green-800 hover:font-bold" >Ver detelhes</Link>
+          <Link target='_top' href={`/estagios/${titulo}`} className="z-auto justify-end py-2 text-lg font-medium tracking-wide text-center text-blue-800 uppercase align-bottom bg-gray-300 rounded-b-lg w-96 hover:bg-gray-200 hover:text-green-800 hover:font-bold" >Ver detelhes</Link>
+          {/* <Link target='_top' href={`https://institucional.universidadepatativa.com.br/estagio-detalhe/?id=${titulo}`} className="z-auto justify-end py-2 text-lg font-medium tracking-wide text-center text-blue-800 uppercase align-bottom bg-gray-300 rounded-b-lg w-96 hover:bg-gray-200 hover:text-green-800 hover:font-bold" >Ver detelhes</Link> */}
         </div>
       </div>
     </>
