@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
-import { getVagas } from "../services/get-vagas";
-import { } from "./../services/get-vaga-by-title";
+
 
 type VagasProps = {
   filter: any;
@@ -12,14 +11,17 @@ type VagasProps = {
   cidade: ReactNode;
   concedente: string;
 }
-export default async function UserDetailsPage({ params }: { params: { titulo: string } }) {
+export default async function UserDetailsPage({ params, }: { params: { titulo: string } }) {
 
 
-  const user = await getVagas();
-  // console.log(user)
+  // const vaga: VagasProps = await getVagaByTitle('itaipu');
+  const response = await fetch(`https://estagio.universidadepatativa.com.br/api/v1/vagas?busca=${params}`);
+  const vagad = await response.json();
+  console.log(vagad)
+  console.log(params)
 
-  const nv = { ...user }
-  console.log(nv[3])
+  const nv = { ...vagad }
+  console.log(nv)
   // const vfilte = user.filter(title == params.titulo);
   // const vf = user.filter((vaga: any) => user.titulo === 'ESTÁGIO');
   // console.log(vf);
@@ -27,7 +29,7 @@ export default async function UserDetailsPage({ params }: { params: { titulo: st
 
   return (
     <>
-
+      {params.titulo}
     </>
   );
 }
