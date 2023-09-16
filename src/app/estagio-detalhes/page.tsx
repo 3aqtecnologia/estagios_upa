@@ -14,9 +14,9 @@ type VagasProps = {
   concedente: string;
 }
 
-export default async function Estagios({ params }: { params: { titulo: string } }) {
-
-  const vaga = await getVagaByTitle(params.titulo);
+export default async function Estagios({ params }: { params: { id: string } }) {
+  let id = "PEDAGOGIA - EDUCAÇÃO ESPECIAL"
+  const vaga = await getVagaByTitle(params.id);
   console.log(vaga);
 
   return (
@@ -40,7 +40,7 @@ export default async function Estagios({ params }: { params: { titulo: string } 
           <div className="flex flex-row items-center mt-3">
             <div className="">
               <span className="text-lg font-light tracking-wide ">Código da Vaga: </span>
-              <span className="py-2 pr-16 text-xl font-bold border-r-2 bortder"> 65156181
+              <span className="py-2 pr-16 text-xl font-bold border-r-2 bortder">123
               </span>
             </div>
             <div className="mx-5">
