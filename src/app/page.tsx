@@ -17,7 +17,7 @@ export default async function Home() {
   const vagas = await getVagas();
   return (
     <main className="flex flex-row flex-wrap justify-around flex-grow">
-      {vagas.slice(0, 4).map((vaga: { codigo: Key | null | undefined; tipo_vaga: { descricao: string; }; cursos: any[]; cidade: { descricao: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }; titulo: string }) =>
+      {vagas.slice(0, 3).map((vaga: { codigo: Key | null | undefined; tipo_vaga: { descricao: string; }; cursos: any[]; cidade: { descricao: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }; titulo: string }) =>
         <Card key={vaga.codigo} tipoVaga={vaga.tipo_vaga.descricao} cursos={vaga.cursos.map((curso: { descricao: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }, index: Key | null | undefined) => (<span key={index}>{curso.descricao}</span>))} cidade={vaga.cidade.descricao} titulo={vaga.titulo} codigo={0} />
       )
       };
